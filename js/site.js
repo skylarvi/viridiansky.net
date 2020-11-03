@@ -1,5 +1,3 @@
----
----
 ;(function(){
     var isTouch = false //var to indicate current input type (is touch versus no touch)
     var isTouchTimer
@@ -72,7 +70,7 @@ $(document).on("click", '#comment-form-submit', function (event) {
 
     $.ajax({
         type: "POST",
-        url: "https://dev.staticman.net/v3/entry/github/{{site.repository}}/{{site.staticman.branch}}/comments",
+        url: "https://dev.staticman.net/v3/entry/github/skylarvi/viridiansky.net/master/comments",
         data: $(form).serialize(),
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
