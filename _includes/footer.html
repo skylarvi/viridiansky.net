@@ -1,0 +1,16 @@
+<div class="footer">
+  <div class="copyright-container">
+    <span class="copyright-notice">Skylar Viridian &copy {{ "now" | date: "%Y" }}</span>
+  </div>
+  {% include social.html %}
+  <link style:="display: none" rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <div class="h-card" style="display: none;">
+    <img class="u-photo" src="{{ site.url }}/img/avatar.jpg" alt="" />
+    <a class="p-name u-url" href="{{ site.url }}">{{ site.author }}</a>
+    <span class="p-locality">{{ site.city }}</span>
+    <span class="p-country-name">{{ site.country }}</span>
+    <p class="p-note">
+      {{ site.bio }}
+    </p>
+  </div>
+</div>
